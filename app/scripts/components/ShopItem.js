@@ -1,10 +1,6 @@
 import React from 'react';
 
-const ShopItemView = React.createClass({
-  // getInitialState: function(){},
-  removeItem: function(){
-    // remove this from your cart.items
-  },
+const ShopItem = React.createClass({
   render: function(){
     return (
       <div>
@@ -12,9 +8,10 @@ const ShopItemView = React.createClass({
         <div className="shopRow">
           <div className="shopItemName">{this.props.name}</div>
           <div className="shopItemPrice">{this.props.price}</div>
+          <input type="button" value="add to cart" onClick={addItem} />
         </div>
       </div>
     )
   }
 });
-export default ShopItemView;
+export default ShopItem;

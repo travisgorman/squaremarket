@@ -1,13 +1,6 @@
 import React from 'react';
 
-const CartView = React.createClass({
-  // getInitialState: function(){},
-  findSum: function(){
-    // return the sum of all items currently in your cart
-  },
-  addItem: function(){
-    // adds this.store.item to your cart.items
-  },
+const Cart = React.createClass({
   render: function(){
     return (
       <div className="cartContainer">
@@ -16,11 +9,11 @@ const CartView = React.createClass({
           <ul> </ul>
           <div>
             <h5>Your Total Price</h5>
-            <h5></h5>
+            <h5>{this.props.total}</h5>
           </div>
         </div>
       </div>
     )
   }
 });
-export default CartView;
+export default Cart;

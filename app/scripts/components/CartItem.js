@@ -1,10 +1,6 @@
 import React from 'react';
 
-const CartItemView = React.createClass({
-  // getInitialState: function(){},
-  removeItem: function(){
-    // remove this from your cart.items
-  },
+const CartItem = React.createClass({
   render: function(){
     return (
       <div>
@@ -17,4 +13,4 @@ const CartItemView = React.createClass({
     )
   }
 });
-export default CartItemView;
+export default CartItem;
